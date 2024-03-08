@@ -1,0 +1,84 @@
+.container {
+  margin-top: 80px;
+  /* background-color: aquamarine; */
+  .product-header{
+    text-align: center;
+    border: 2px solid #FADB3F;
+    padding: 10px;
+  }
+}
+
+.products-items {
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.data-length {
+  background-color: #fadb3fe8;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.product {
+  padding: 10px 15px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+
+  &:hover {
+    transform: translateY(-5px);
+    border-color: #FADB3F;
+  }
+}
+
+.product img {
+  margin: 5px;
+}
+
+.product h2 {
+  font-size: 15px;
+}
+
+.category-buttons .btn-filter {
+  border-radius: 5px;
+  background-color: gainsboro;
+  border: none;
+}
+
+.category-buttons .active {
+  background-color: #FADB3F !important;
+  color: black !important;
+  border: none;
+}
+
+.detail-btn {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.input-search {
+  background-image: url(../../assests/magnifying-glass-solid\ \(1\).svg);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 15px;
+  background-color: rgb(237, 237, 237);
+  padding: 10px 50px;
+  margin: 10px 5px 20px;
+  width: 100%;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.heart {
+  color: rgb(196, 196, 196);
+  font-size: 20px;
+  margin-left: auto;
+}

@@ -1,0 +1,67 @@
+.checkout-container{
+  /* background-color: rgb(240, 240, 240); */
+  text-align: center;
+  margin: 100px auto;
+  padding: 20px;
+}
+.checkout-products{
+  padding: 20px;
+}
+.checkout-product{
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.checkout-product img{
+  width: 90px;
+  margin-right: 20px;
+}
+.price-btns{
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center ;
+  justify-content: center;
+  
+}
+.btns button{
+  width: 35px;
+  height: 35px;
+  line-height: 17px;
+  background-color: transparent;
+    border: 1px solid gainsboro;
+    padding: 7px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.btns button:last-child{
+  color: rgb(235, 0, 0);
+}
+.total-price{
+  font-weight: bold;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  text-align: right;
+}
+.success-msg{
+  background-color: rgb(124, 237, 149);
+  padding: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  button{
+    padding: 5px;
+    color: rgb(158, 0, 0);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+}
+.buy-now-btn{
+  display: flex;
+   margin-left: auto;
+}

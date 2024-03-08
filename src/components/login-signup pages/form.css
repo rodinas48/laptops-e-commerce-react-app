@@ -1,0 +1,66 @@
+.form {
+  text-align: center;
+  width: 500px;
+  padding: 20px 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*background-color: rgb(255, 255, 133);
+  */
+  box-shadow: 2px 2px 5px 2px rgba(186, 186, 186, 0.426);
+  border-radius: 10px;
+}
+
+.form h2 {
+  font-weight: bold;
+}
+
+.form p {
+  color: gray;
+}
+
+.form label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  margin: 10px 0px;
+  display: block;
+  border: 1px gainsboro solid;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-size: 15px;
+  background-position: 15px 13px;
+  padding: 10px 45px;
+}
+
+.form input[type=text] {
+  background-image: url(../login-signup\ pages/../../assests/user-solid\ \(1\).svg);
+}
+
+.form input[type=password] {
+  background-size: 18px;
+  background-image: url(../login-signup\ pages/../../assests/key-solid.svg);
+}
+
+#email {
+  background-position: 15px 15px;
+  background-image: url(../login-signup\ pages/../../assests/envelope-solid.svg);
+}
+
+.btn1 {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+}
+
+.alert {
+  font-size: 13px;
+  padding-top: 10px;
+  height: 40px;
+  margin: 10px;
+}

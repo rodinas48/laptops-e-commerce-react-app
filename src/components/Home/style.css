@@ -1,0 +1,58 @@
+.main-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+}
+.main-info h2 {
+
+  font-weight: bold;
+  background-image: linear-gradient(to right, black, black, #ddbb15, rgb(132, 132, 132));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main-info p {
+  color: rgb(80, 80, 80);
+}
+
+.svg {
+  width: 600px;
+  top: 5px;
+  right: 10px;
+  position: absolute;
+  z-index: -2;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: 0.5s;
+}
+    button:hover .arrow {
+      margin-left: 5px !important;
+    }
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  /* background-color: #FADB3F; */
+}
+
+.img img {
+  width: 500px;
+  animation: motion 2s infinite alternate;
+}
+
+@keyframes motion {
+  from {
+    transform: scale(1);
+}
+
+  to {
+    transform: scale(1.03);
+  }
+}

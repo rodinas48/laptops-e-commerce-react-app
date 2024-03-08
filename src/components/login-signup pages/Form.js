@@ -2,6 +2,7 @@ import React from "react";
 import "./form.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTriangleExclamation } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 function Form({
   isSignUp,
   email,
@@ -76,12 +77,12 @@ function Form({
 
         {isSignUp ? (
           <p>
-            Already have an Account? <a href="#0">Register</a>
+            Already have an Account? <Link to="/login">Login</Link>
           </p>
         ) : (
           <p>
             {" "}
-            Don't have an account? <a href="#0">Register</a>
+            Don't have an account? <Link to="/signup">Register</Link>
           </p>
         )}
       </form>

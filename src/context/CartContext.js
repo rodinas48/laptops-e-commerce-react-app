@@ -22,11 +22,10 @@ function CartProvider({ children }) {
   const updateQuantity = (productId, quantity) => {
     const updateCart = cartItems.map(item => {
       if (item.id === productId) {
-        // const updateQuan = 
         return {
           ...item,
-          quantity: +item.quantity + +quantity
-        }
+          quantity: parseInt(item.quantity) + parseInt(quantity),
+        };
         
       }
       return item;
@@ -92,7 +91,10 @@ function CartProvider({ children }) {
       cartItems.some((item) => item.id === productId);
   const totalItems = cartItems.reduce((acc, item) => acc + 1, 0);
   const totalFav = favourite.reduce((acc, item) => acc + 1, 0);
-  const totalPrice = cartItems.reduce((acc, item) => (acc + item.price)*item.quantity, 0);
+  const totalPrice = cartItems.reduce(
+    (acc, item) => acc + parseFloat(item.price) * parseInt(item.quantity),
+    0
+  );
   return (
     <CartContext.Provider
       value={{ cartItems,favourite,totalFav, addProductToCart,addFavorite,removeFavorite, removeProductFromCart, clearCart,updateQuantity ,isInCart,totalItems,totalPrice}}

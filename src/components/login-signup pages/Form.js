@@ -31,7 +31,7 @@ function Form({
           onChange={(e) => onChange(e, "username")}
         />
         {errors.username && (
-          <div className="alert alert-danger" role="alert">
+          <div className="alert alert-danger alert-form" role="alert">
             <FontAwesomeIcon icon={faTriangleExclamation} /> {errors.username}
           </div>
         )}

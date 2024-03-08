@@ -43,7 +43,7 @@ function Checkout() {
     console.log(id);
   };
   const handleDecreament = (id, quantity) => {
-    if (quantity > 1) {
+    if (+quantity > 1) {
       updateQuantity(id, -1);
     }
   };
@@ -84,7 +84,7 @@ function Checkout() {
                     </button>
                     <span>{item.quantity || 1}</span>
                     <button
-                      onClick={() => handleDecreament(item.id, item.quantity)}
+                      onClick={() => handleDecreament(item.id, +item.quantity)}
                     >
                       <FontAwesomeIcon icon={faMinus} />{" "}
                     </button>
@@ -97,7 +97,7 @@ function Checkout() {
             );
           })}
           <div className="total-price">
-            <span>Total | EGP {totalPrice}</span>
+            <span>Total | EGP {+totalPrice}</span>
           </div>
           <button
             onClick={handleCheckout}

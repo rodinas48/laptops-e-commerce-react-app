@@ -12,7 +12,7 @@ function ServiceMenu() {
  if (favourite.length === 0) {
       setAlert(
         <div
-          className="alert alert-warning alert-dismissible fade show"
+          className="alert alert-warning alert-dismissible fade show alert-fav"
           role="alert"
         >
           The Favourite Is Empty!
@@ -30,7 +30,7 @@ function ServiceMenu() {
         if (cartItems.length === 0) {
       setAlert (
         <div
-          className="alert alert-warning alert-dismissible fade show"
+          className="alert alert-warning alert-dismissible fade show alert-cart"
           role="alert"
         >
           The Cart Is Empty!

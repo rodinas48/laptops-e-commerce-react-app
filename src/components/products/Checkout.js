@@ -33,7 +33,7 @@ function Checkout() {
   };
 
   const handleConfirm = () => {
-    if (itemToRemove) {
+    if (itemToRemove||itemToRemove===0) {
       removeProductFromCart(itemToRemove);
       setShowModal(false);
     }

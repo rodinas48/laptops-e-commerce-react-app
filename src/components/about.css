@@ -1,0 +1,55 @@
+.about-section {
+  padding: 15vh 0px 5vh 0px;
+}
+
+.about-title {
+  font-size: 40px;
+  margin: auto;
+  padding: 10px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.about-title::before,
+.about-title::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+
+  background-color: cornflowerblue;
+  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.text span {
+  font-size: 40px;
+}
+
+.text p {
+  margin-top: 10px;
+  line-height: 30px;
+  color: gray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.container {
+  
+  margin: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.container .text,
+.container img {
+  width: 40%
+}

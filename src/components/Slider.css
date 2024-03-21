@@ -1,0 +1,15 @@
+.carousel-item img {
+  width: 75%;
+  height: 90vh;
+}
+
+.icon {
+  background-color: cornflowerblue !important;
+  width: 40px !important;
+  height: 40px !important;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%; 
+   border-radius: 50%;
+}

@@ -1,0 +1,54 @@
+.foot {
+
+  width: 95%;
+  margin: auto;
+  background-color: rgb(56, 110, 211);
+  color: white;
+  
+
+  border-radius: 20px 0px 20px 0px;
+}
+.footer{
+    padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+.copyright{
+  width: 70%;
+  margin: auto;
+  /* background-color: antiquewhite; */
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+  align-self: flex-start;
+}
+
+.contact-list,
+.menu-list {
+  width: 20%;
+}
+
+.contact-title::after,
+.menu-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin: 10px 0px;
+  background-color: gainsboro;
+}
+.contact,.menu{
+  padding-left: 0px;
+
+}
+.contact a,
+.menu a{
+color: rgba(245, 245, 245, 0.778);
+}
+.contact a:hover,
+.menu a:hover {
+  color: white;
+}

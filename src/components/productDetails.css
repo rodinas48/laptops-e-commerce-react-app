@@ -1,0 +1,147 @@
+.product {
+  /* width: 60%; */
+  /* min-height: 450px; */
+  min-height: 380px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:center; */
+  align-items: center;
+  /* background-color: aliceblue; */
+  box-shadow: 1px 4px 10px 1px gainsboro;
+}
+
+.imgDetails {
+  /* width: 40%; */
+  padding: 15px;
+  margin: 10px auto;
+  border: 1px solid rgba(220, 220, 220, 0.453);
+  height: 370px;
+}
+
+.details {
+  /* width: 57%; */
+  padding: 20px;
+  margin: auto;
+}
+.product-title{
+  font-size: 27px;
+}
+.price{
+  margin: 15px 0px ;
+}
+.product-price {
+  margin-right: 10px;
+}
+
+.product-desc {
+  color: gray;
+
+}
+
+.product-category span {
+  font-weight: bold;
+
+}
+
+.rating {
+  margin-left: 10px;
+}
+
+.heart {
+  color: red;
+}
+
+.star {
+  color: goldenrod;
+}
+
+.btnCart {
+  width: 40%;
+  /* align-self: flex-end; */
+}
+.load {
+  font-size: 48px;
+  text-align: center;
+  margin: 200px 20%;
+  color: cornflowerblue;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  position: relative;
+}
+
+.load:before {
+  content: '';
+  animation: 5s print linear alternate infinite;
+}
+
+.load:after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: 50%;
+  width: 2px;
+  height: 1.3em;
+  background: currentColor;
+  opacity: 0.8;
+  animation: 1s blink steps(2) infinite;
+  -webkit-transform: translatey(-45%);
+  -moz-transform: translatey(-45%);
+  -ms-transform: translatey(-45%);
+  -o-transform: translatey(-45%);
+  transform: translatey(-45%);
+}
+
+@keyframes blink {
+  0% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes print {
+  0% {
+    content: 'L'
+  }
+
+  10% {
+    content: 'Lo'
+  }
+
+  20% {
+    content: 'Loa'
+  }
+
+  30% {
+    content: 'Load'
+  }
+
+  40% {
+    content: 'Loadi'
+  }
+
+  50% {
+    content: 'Loadin'
+  }
+
+  60% {
+    content: 'Loading'
+  }
+
+  70% {
+    content: 'Loading.'
+  }
+
+  80% {
+    content: 'Loading..'
+  }
+
+  90%,
+  100% {
+    content: 'Loading...'
+  }
+}

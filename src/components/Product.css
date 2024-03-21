@@ -1,0 +1,47 @@
+.card {
+  min-height: 390px !important;
+  max-height: 400px;
+  position: relative;
+  
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  
+}
+.card:hover{
+  border-color:cornflowerblue;
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px);
+  transform: translateY(-1px)
+}
+
+.card .img {
+  width: 15rem;
+  margin: auto;
+  height: 40vh !important;
+  padding: 5px;
+}
+
+.card-title {
+  font-size: 15px;
+  
+}
+
+.card-text{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  color: gray;
+  font-weight: bold;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.btnDetail{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-family: 'Roboto Condensed', sans-serif !important; 
+}
